@@ -39,7 +39,7 @@ class VentanaText extends JFrame{
 class Marco extends JPanel{  //la clase "JPanel" es la que cra las laminas
 	
 
-	public void paintComponet(Graphics g) {     //reescribimos el metodo "paintComponet"
+	public void paintComponent(Graphics g) {     //reescribimos el metodo "paintComponet"
 												//le pasamos por parametro un onj tipo Graphics					
 		super.paintComponent(g);  
 		
