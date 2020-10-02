@@ -19,6 +19,8 @@ public class marco_centrado {
 
 class ventana_cent extends JFrame{  //se hereda de JFrame!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	
+	
+
 	public ventana_cent(){
 		
 		Toolkit sistem = Toolkit.getDefaultToolkit(); //un objeto que tiene mucas herramientas del sistema
