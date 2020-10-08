@@ -13,6 +13,7 @@ public class Marco_dibujos {
 		marquito.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		//esto es un comentario para ver sss
+		System.out.print("sisisisisisis");
 	}
 
 }
