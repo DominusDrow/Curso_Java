@@ -12,8 +12,7 @@ public class Marco_dibujos {
 		
 		marquito.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		//esto es un comentario para ver sss
-		System.out.print("sisisisisi");
+		
 	}
 
 }
@@ -46,6 +45,7 @@ class Dibujitos extends JPanel{
 			//A partir de aqui ya podemos hacer cualquier cosa con el objeto "Graphics"
 			
 			g.drawLine(100,200,300, 600);
+			g.drawArc(10, 30, 50, 20, 80, 50);
 				
 		}
 	
