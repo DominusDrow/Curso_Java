@@ -3,7 +3,6 @@ package graficas;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.*;
-import java.awt.geom.Ellipse2D.Double;
 
 public class Dibujos_Java2D {
 
@@ -42,7 +41,7 @@ class PanelDibujos extends JPanel{
 		
 		Graphics2D g2 = (Graphics2D) g;
 		
-		Rectangle2D rectangulo= new Rectangle2D.Double(300,100,200,250);
+		Rectangle2D rectangulo= new Rectangle2D.Double(300,100,200,200);
 		
 		g2.draw(rectangulo);
 		
@@ -52,14 +51,14 @@ class PanelDibujos extends JPanel{
 		
 		g2.draw(elipse);
 		
-		g2.draw(new Line2D.Double(300,100,500,350));
+		g2.draw(new Line2D.Double(300,100,500,300));
 		
 		Ellipse2D circulo= new Ellipse2D.Double();
 		
 		double centroX= rectangulo.getCenterX();
 		double centroY= rectangulo.getCenterY();
 		
-		circulo.setFrameFromCenter(centroX, centroX, centroX+100, centroY+100);
+		circulo.setFrameFromCenter(centroX, centroY,centroX+150, centroY+150);
 		
 		g2.draw(circulo);
 		
