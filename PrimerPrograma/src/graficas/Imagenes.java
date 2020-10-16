@@ -3,7 +3,6 @@ package graficas;
 import javax.swing.*;
 import java.awt.*;
 import javax.imageio.*;
-import java.awt.geom.*;
 import java.io.*;
 
 public class Imagenes {
@@ -21,7 +20,7 @@ class Marco_imagen extends JFrame{
 	public Marco_imagen() {
 		
 		setTitle("Imagenes");
-		setSize(500,300);
+		setSize(900,500);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
@@ -45,17 +44,12 @@ class Panel_imagen extends JPanel{
 		
 		try {
 			imagen= ImageIO.read(new File("src/graficas/anime1.png"));
-		}
-		catch(IOException e){
+		}		
+		catch(IOException e){			//esto es una excepcion
 			System.out.println("Imagen no encontrada");
 		}
-		
-		
-		
-		
-		g.drawImage(imagen, 100, 100,null);
-		
-		
+	
+		g.drawImage(imagen, 50, 30,275,400, null);
 		
 	}
 	
